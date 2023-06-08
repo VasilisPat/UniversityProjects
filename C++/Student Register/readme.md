@@ -1,1 +1,2 @@
+## Student Register
 Simple recreation attempt of the student register that is used in a university. Some complicated rules and values are missing, in order not to deviate from the original purpose of the exercise.
