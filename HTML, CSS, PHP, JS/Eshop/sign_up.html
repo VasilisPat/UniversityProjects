@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Sign Up | E-Shop</title>
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="assets/jquery-3.7.0.min.js"></script>
+        <script src="inc/js/sign_up.js"></script>
+    </head>
+    <body>
+        <h1>Sign Up</h1>
+        <hr>
+        <p>Please enter your information to Sign Up.</p>
+
+        <div class="form-container">
+            <form method="post" action="inc/signUpAction.php" >
+                <label for="userFullName">Full Name:</label>
+                <input type="text" id="userFullName" name="userFullName" minlength="4" maxlength="30" placeholder="Enter your Name" required><br>
+                <br>
+                <label for="userEmail">E-Mail:</label>
+                <input type="email" id="userEmail" name="userEmail" placeholder="E.g. test@example.com" required><br>
+                <br>
+                <label for="userPassword">Password:</label>
+                <input type="password" id="userPassword" name="userPassword" minlength="5" maxlength="15" placeholder="Enter your Password" required><br>
+                <br>
+                <label for="userType">User Type:</label>
+                <select name="userType" id="userType" required>
+                    <option disabled selected value="">Select...</option>
+                    <option value="Individual">Individual</option>
+                    <option value="Company">Company</option>
+                </select><br>
+                <input type="button" class="cancelButton" value="Cancel">
+                <input type="submit" class="signupButton" value="Sign Up">
+            </form>
+        </div>
+    </body>
+    <footer>
+        <br> <hr>
+        <div class="footer-container">
+            <p>E-Shop © 2023</p>  
+        </div>  
+    </footer>
+</html>

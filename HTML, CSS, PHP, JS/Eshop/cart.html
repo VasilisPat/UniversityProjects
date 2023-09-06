@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Cart | E-Shop</title>
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="assets/jquery-3.7.0.min.js"></script>
+        <script src="inc/js/cart.js"></script>
+    </head>
+    <body>
+        <div class='header-container'>
+            <h1>Your Shopping Cart</h1>
+        </div>
+        
+        <div class='user-buttons-container'>
+            <button id='loginButton'>Login</button>
+            <button id='homeButton'>Home</button>
+            <button id='logoutButton'>Logout</button>
+            <p id='userEmail'>Registered as: </p>
+            <p id='userType'>Signed in as: </p>
+        </div>   
+
+        <hr>
+
+        <table class="table-cart" cellpadding="10" cellspacing="1">
+            <tbody>
+                <tr>
+                    <th style="text-align:left;" width="25%">Name</th>
+                    <th style="text-align:left;" width="15%">Product Code</th>
+                    <th style="text-align:right;" width="5%">Quantity</th>
+                    <th style="text-align:right;" width="10%">Unit Price</th>
+                    <th style="text-align:right;" width="10%">Total Unit Price</th>
+                    <th style="text-align:center;" width="5%">Remove</th>
+                </tr>
+                <h3 id='empty-cart'>Your cart is empty.</h3>
+            </tbody>
+        </table>
+
+        <div class="cart-buttons-container">
+            <p>
+                <button id='checkoutButton'>Checkout</button>
+                <button id='clearCartButton'>Clear Cart</button>
+            </p>
+        </div>
+    </body>
+    <footer>
+        <br> 
+        <div class="footer-container">
+            <p>E-Shop © 2023</p>  
+        </div>  
+    </footer>
+</html>
